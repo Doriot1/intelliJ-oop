@@ -1,0 +1,12 @@
+Daniel
+100
+Jozko
+250
+Tomas
+300
+Kabur
+400
+Brano
+401
+Palo
+500
