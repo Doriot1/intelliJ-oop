@@ -13,7 +13,6 @@ import xnovakd1.fiit.view.screen.MainScreen;
 
 public class Zoo extends Application {
     private Context context;
-    private int k;
 
     public static void main(String[] args) {
         launch();

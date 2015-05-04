@@ -40,11 +40,11 @@ public class VetView extends TaskListView {
             try {
                 if (select != -1) {
                     Tasks.getInstance().remove(list2.remove(select));
-                    Tasks.getInstance().add(new DirtProblem("spina"));
+                    Tasks.getInstance().add(new DirtProblem("dirt"));
                     login.getLoggedUser().interpret(Commands.TASK_RESOLVE);
                 } else {
                     Tasks.getInstance().remove(list2.remove(0));
-                    Tasks.getInstance().add(new DirtProblem("spina"));
+                    Tasks.getInstance().add(new DirtProblem("dirt"));
                     login.getLoggedUser().interpret(Commands.TASK_RESOLVE);
                 }
             } catch (IndexOutOfBoundsException ex) {
