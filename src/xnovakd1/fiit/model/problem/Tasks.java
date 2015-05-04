@@ -18,7 +18,8 @@ public class Tasks extends ArrayList<Problem> {  // polymorfizmus
 
 
     public static Tasks getInstance() {
-        if (instance == null) instance = new Tasks();
+        if (instance == null)
+            instance = new Tasks();
         return instance;
     }
 

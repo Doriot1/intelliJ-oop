@@ -86,6 +86,8 @@ public class MainScreen extends BasicView {
                 label3.setText("Registracia prebehla uspesne!");
             else
                 label3.setText("Nezadali ste meno alebo ID");
+            registerText.setText("");
+            id.setText("");
         });
 
 

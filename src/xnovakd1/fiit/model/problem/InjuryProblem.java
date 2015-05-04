@@ -3,8 +3,7 @@ package xnovakd1.fiit.model.problem;
 public class InjuryProblem extends Problem{
 
 	private static final long serialVersionUID = 3329351849064764473L;
-	
-	
+
 	private String animal;
 
 	public InjuryProblem() {

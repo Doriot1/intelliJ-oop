@@ -57,6 +57,7 @@ public class Login {
                 validateRegisteredName(out, userName, ID);
             } catch (RegisterException e) {
                 System.out.println("S danym menom a/alebo ID sa neda zaregistrovat.");
+                return false;
             }
 
         } catch (IOException ex) {

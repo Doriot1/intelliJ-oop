@@ -22,7 +22,7 @@ public class DirtProblem extends Problem{
 	}
 	
 	public DirtProblem(String description){
-		this.description = "Vznikol neporiadok po veterinarovi";
+		this.description = "Vznikol neporiadok po osetreni v klietke " + randomInt;
 	}
 
 	public String toString() {
