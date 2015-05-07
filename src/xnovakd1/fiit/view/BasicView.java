@@ -16,9 +16,7 @@ import xnovakd1.fiit.model.file.Login;
  * BasicView je parent vsetkych Views a sam extenduje GridPane,
  * co je nazov layout-u ktory uplatnujem v kazdom View. Mam tu final
  * context aby nikdy nebol prepisany, stale ten isty sa podava dalej
- * pomocou geteru, kt. je tiez final, cize sa neda prekonat. Mam tu
- * inicializovanu velkost okna, medzeri medzi mriezkami a sirky/dlzky stlpcov/riadkov.
- * 
+ * pomocou geteru, kt. je tiez final, cize sa neda prekonat.
  */
 
 public abstract class BasicView extends GridPane {
@@ -27,6 +25,15 @@ public abstract class BasicView extends GridPane {
 	private Label credits;
 
 	protected static Login login = new Login();
+
+	/**
+	 * Konstruktor BasicView je prekonavany v kazdom "pohlade",
+	 * bere ako argument context pomocou getteru, cize vsetky views
+	 * maju ten isty context. Dalej spusta metodu initView() ktora
+	 * inicializuje vsetky prvky, ktore v metode addViews() vykreslim
+	 * na obrazovku.
+	 * @param context
+	 */
 
 	public BasicView(Context context) {
 		this.context = context;

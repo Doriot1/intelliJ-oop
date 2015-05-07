@@ -9,8 +9,7 @@ import xnovakd1.fiit.model.problem.Tasks;
 /**
  * Trieda Boss reprezentuje specificky typ uzivatela, ktory sa vie prihlasit do systemu.
  * Specificky preto, lebo funguje ako administrator, teda jedine on vie explicitne pridavat ulohy
- * pre ostatne povolania. Implementuje rozhranie LoggedUser aby ziskal pristup k metode interpret,
- * ktora podla "enum-u" zisti, komu sa ma vygenerovat uloha.
+ * pre ostatne povolania. Implementuje rozhranie LoggedUser aby ziskal pristup k metode interpret.
  */
 
 public class Boss implements LoggedUser {
@@ -22,6 +21,12 @@ public class Boss implements LoggedUser {
 		list = Tasks.getInstance();
 		System.out.println("Prihlasil sa Boss");
 	}
+
+	/**
+	 * Podla enumeracie tato metoda zisti, komu bola
+	 * pridana/vygenerovana uloha.
+	 * @param command
+	 */
 
 	public void interpret(Commands command) {
 		if (command == Commands.GENERATE_TASK_VET) {

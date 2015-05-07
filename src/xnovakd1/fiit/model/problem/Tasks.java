@@ -23,6 +23,11 @@ public class Tasks extends ArrayList<Problem> {  // polymorfizmus
         return instance;
     }
 
+    /**
+     *
+     * @param problem
+     * @return
+     */
 
     public List<Problem> getAll(Class<?> problem) {
         List<Problem> list = new ArrayList<>();

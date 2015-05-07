@@ -11,6 +11,8 @@ import xnovakd1.fiit.model.problem.Problem;
 import xnovakd1.fiit.model.problem.Tasks;
 
 /**
+ * Trieda JanitorView, pokryva grafiku a logiku, ked uzivatel,
+ * ktory sa prihlasil je typu Janitor/Upratovac.
  * Created by Daniel on 25.4.2015.
  */
 public class JanitorView extends TaskListView {

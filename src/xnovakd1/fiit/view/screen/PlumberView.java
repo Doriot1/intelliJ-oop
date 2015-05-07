@@ -11,6 +11,8 @@ import xnovakd1.fiit.model.problem.Problem;
 import xnovakd1.fiit.model.problem.Tasks;
 
 /**
+ * Trieda PlumberView, pokryva grafiku a logiku, ked uzivatel,
+ * ktory sa prihlasil je typu Plumber/Instalater.
  * Created by Daniel on 25.4.2015.
  */
 public class PlumberView extends TaskListView {

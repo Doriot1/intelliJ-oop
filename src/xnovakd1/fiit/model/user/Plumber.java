@@ -2,6 +2,7 @@ package xnovakd1.fiit.model.user;
 
 import xnovakd1.fiit.model.Commands;
 
+
 public class Plumber implements LoggedUser {
 
 	public Plumber(){

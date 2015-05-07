@@ -14,9 +14,23 @@ import xnovakd1.fiit.view.screen.MainScreen;
 public class Zoo extends Application {
     private Context context;
 
+    /**
+     * V metode main volam iba jednu metodu - launch();
+     * V JavaFX aplikaciach by mal byt main prazdny a nachadzat sa tam
+     * iba metoda launch(), ktora automaticky spusti prekonanu metodu start();
+     * @param args
+     */
+
     public static void main(String[] args) {
         launch();
     }
+
+    /**
+     * V metode start inicializujem context a vytvorim hlavne okno,
+     * ktore sa uzivatelovi zobrazi ked spusti ZooManazer.
+     * @param primaryStage
+     * @throws Exception
+     */
 
     @Override
     public void start(Stage primaryStage) throws Exception {
