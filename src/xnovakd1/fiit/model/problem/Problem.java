@@ -14,6 +14,12 @@ public abstract class Problem implements Serializable {
     private static final long serialVersionUID = 5848318966920649329L;            // konvencia
     protected int randomInt;
 
+    /**
+     * Aby zadane ulohy neboli len tie iste vypisy dookola,
+     * tak v tejto metode generujem nahodne cislo, ktore v pod-problemoch
+     * vyuzivam na vytvorenie unikatneho problemu.
+     */
+
     public Problem() {
         Random random = new Random();
         randomInt = random.nextInt(100);

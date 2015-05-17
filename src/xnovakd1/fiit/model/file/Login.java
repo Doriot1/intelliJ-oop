@@ -9,17 +9,24 @@ import java.util.Scanner;
 /**
  * Created by Daniel on 18.4.2015.
  * V tejto triede mam implementovane prihlasovanie a registrovanie uzivatelov.
- * V login metode overim zadaneho usera, ci sa zhoduje s databazou uzivatelov v subore "temp.txt".
- * Ak sa najde zhoda, tak uzivatela pustim dalej a dostane taky View, ktory koresponduje s jeho ID.
- * Taktiez mam v tejto triede implementovanu registraciu v metode register.
+ * Do premennej loggedUser si ulozim prihlasenu osobu, s touto informaciou potom
+ * program pracuje dalej.
  */
+
 public class Login {
     private LoggedUser loggedUser;
     private boolean logged = false;
     private int ID;
     private String user;
 
-
+    /**
+     * V metode login zoberem input uzivatela a porovnavam userName s menami, ktore
+     * su ulozene v subore, ktory tato metoda dostava ako argument. Ak sa najde zhoda,
+     * program pusti uzivatela dalej. Ak nie, vypise sa chybovy vypis a program nic neurobi.
+     * @param fileName
+     * @param userName
+     * @return vraciam bool hodnotu ci sa nam podarilo prihlasit
+     */
 
     public boolean login(String fileName, String userName) {
         Scanner scan = null;
@@ -49,6 +56,16 @@ public class Login {
         }
         return logged;
     }
+
+    /**
+     * V metode register ma uzivatel programu moznost serializovanej registracie.
+     * Taktiez tu mam vlastne vytvorenu vynimku, "RegisterException", ktora sa "hodi"
+     * ak sa uzivatel pokusa prihlasit zo zlymi udajmi.
+     * @param fileName
+     * @param userName
+     * @param ID
+     * @return
+     */
 
     public boolean register(String fileName, String userName, String ID) {
         try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(fileName, true)))) {

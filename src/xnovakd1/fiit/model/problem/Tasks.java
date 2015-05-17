@@ -5,9 +5,7 @@ import java.util.List;
 
 /**
  * V tejto triede Tasks mam uplatneny polymorfizmus, extendujem ArrayList Problemov.
- * Do observableArrayListu pridavam nove ulohy pomocou metody getInstance(), a getAll() metoda
- * sa stara o to, aby ked sa specificky pracovnik prihlasi do programu, tak videl iba typ problem,
- * na ktory je on sam odbornik.
+ * Do observableArrayListu pridavam nove ulohy pomocou metody getInstance()
  */
 
 public class Tasks extends ArrayList<Problem> {  // polymorfizmus
@@ -24,7 +22,8 @@ public class Tasks extends ArrayList<Problem> {  // polymorfizmus
     }
 
     /**
-     *
+     * getAll() metoda sa stara o to, aby ked sa specificky pracovnik prihlasi do programu,
+     * tak videl iba typ problemu, na ktory je on sam odbornik.
      * @param problem
      * @return
      */

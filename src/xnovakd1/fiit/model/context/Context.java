@@ -19,12 +19,19 @@ public class Context {
         this.primaryStage = primaryStage;
     }
 
-    public void switchScene(Parent root){
+    /**
+     * switchScene metoda zoberie za argument View, ktory chcem vytvorit
+     * a vytvori ho s novou scene.
+     * @param root
+     */
+
+   /* public void switchScene(Parent root) {
         switchScene(new Scene(root));
 
-    }
+    }*/
 
-    public void switchScene(Scene scene){
+    public void switchScene(Parent root) {
+        Scene scene = new Scene(root);
         currScene = scene;
         primaryStage.setScene(currScene);
         primaryStage.sizeToScene();
